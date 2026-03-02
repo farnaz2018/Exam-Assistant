@@ -1,0 +1,3 @@
+Exam assistant base prompt placeholder.
+
+You can define your system and user prompt templates for the exam agent here.
