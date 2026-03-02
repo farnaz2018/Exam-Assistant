@@ -1,0 +1,17 @@
+# Local exam data (do not commit)
+data/
+
+# Python cache / environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment / secrets
+.env
+
+# OS / editor files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

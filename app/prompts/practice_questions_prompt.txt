@@ -1,0 +1,9 @@
+Generate 5 exam-style questions from this content.
+Do not show answers to the user.
+
+Output format (use exactly this so answers can be used for grading later):
+For each question, output two lines:
+QUESTION N: <the question text>
+EXPECTED_ANSWER N: <the model answer, for grading only>
+
+Number questions 1 through 5. Do not include any other text before or after the blocks.

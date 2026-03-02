@@ -1,15 +1,16 @@
 """
-Exam agent logic for the exam assistant.
-Currently a placeholder.
+Exam-focused RetrievalQA agent.
 """
 
+try:
+    from langchain.chains.retrieval_qa.base import RetrievalQA
+except ImportError:
+    from langchain.chains import RetrievalQA
 
-class ExamAgent:
-    """Placeholder exam agent class."""
 
-    def __init__(self) -> None:
-        pass
-
-    def run(self, question: str) -> str:
-        """Placeholder method for answering an exam question."""
-        raise NotImplementedError("ExamAgent.run is not implemented yet.")
+def build_exam_agent(llm, retriever):
+    return RetrievalQA.from_chain_type(
+        llm=llm,
+        retriever=retriever,
+        chain_type="stuff",
+    )

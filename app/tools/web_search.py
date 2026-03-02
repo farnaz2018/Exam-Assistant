@@ -1,9 +1,9 @@
 """
-Web search tool integration for the exam assistant.
-Currently a placeholder.
+Web search tool for the exam assistant. Use as fallback when documents are insufficient.
 """
 
+from langchain_community.tools import DuckDuckGoSearchRun
 
-def web_search(query: str) -> str:
-    """Placeholder for performing a web search."""
-    raise NotImplementedError("web_search is not implemented yet.")
+
+def get_web_tool():
+    return DuckDuckGoSearchRun()

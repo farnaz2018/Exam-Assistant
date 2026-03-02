@@ -1,0 +1,15 @@
+langchain>=1.2,<3
+langchain-core
+langchain-community
+langchain-openai
+langchain-text-splitters
+langgraph
+openai
+chromadb
+pypdf
+python-docx
+docx2txt
+pillow
+pytesseract
+duckduckgo-search
+python-dotenv
